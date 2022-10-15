@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o1GZVUmrSh31/B46i98W5RDTrIcu1qL2uei+TgJurKVGHAiqDWigwTc8PXxVhlnB+qCpPSA+shmS9eRE56ti5g==",
+  "dgSpecHash": "ZMzVT0x+/I76x/wfcOYoLD3+jwybY2viniPHD+ouv6P3LtWyAKIINaX6O3MmpYR2CjaQes1Bzdx8dEvg27mgdQ==",
   "success": true,
   "projectFilePath": "D:\\Documentos\\Projetos_Desenvolvimento\\DotNet\\MicroService-DotNet6-Udemy\\507_Microservices.NET6-FirstMicroservices\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
   "expectedPackageFiles": [

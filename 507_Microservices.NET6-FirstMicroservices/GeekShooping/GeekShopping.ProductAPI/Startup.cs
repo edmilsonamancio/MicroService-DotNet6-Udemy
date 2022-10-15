@@ -29,6 +29,7 @@ namespace GeekShopping.ProductAPI
 
             services.AddScoped<IProductRepository, ProductRepository>();
 
+            services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
         }
@@ -40,6 +41,7 @@ namespace GeekShopping.ProductAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.MapControllers();
         }
     }
 

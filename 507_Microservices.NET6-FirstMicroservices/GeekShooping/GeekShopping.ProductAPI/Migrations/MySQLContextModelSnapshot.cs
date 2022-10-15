@@ -56,6 +56,98 @@ namespace GeekShopping.ProductAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 2",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 3",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 4",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 5",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 6",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 7",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 8L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 8",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 9L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 9",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 10L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 10",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 11L,
+                            CategoryName = "Papelaria",
+                            Description = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                            ImageUrl = "https://www.google.com.br",
+                            Name = "Caderno 11",
+                            Price = 69.9m
+                        });
                 });
 #pragma warning restore 612, 618
         }
