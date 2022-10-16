@@ -630,6 +630,19 @@
             "rid": "win"
           }
         }
+      },
+      "GeekShopping.Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GeekShopping.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeekShopping.Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -1730,12 +1743,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "GeekShopping.Web/1.0.0": {
+      "type": "project",
+      "path": "../GeekShopping.Web/GeekShopping.Web.csproj",
+      "msbuildProject": "../GeekShopping.Web/GeekShopping.Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
+      "GeekShopping.Web >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
       "Pomelo.EntityFrameworkCore.MySql >= 6.0.2",
@@ -1775,7 +1794,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documentos\\Projetos_Desenvolvimento\\DotNet\\MicroService-DotNet6-Udemy\\507_Microservices.NET6-FirstMicroservices\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj": {
+              "projectPath": "D:\\Documentos\\Projetos_Desenvolvimento\\DotNet\\MicroService-DotNet6-Udemy\\507_Microservices.NET6-FirstMicroservices\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
