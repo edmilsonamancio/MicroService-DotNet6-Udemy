@@ -1,8 +1,7 @@
-﻿using AutoMapper;
-using GeekShopping.ProductAPI.Config;
-using GeekShopping.ProductAPI.Model.Context;
-using GeekShopping.ProductAPI.Repository;
-using Microsoft.EntityFrameworkCore;
+﻿
+
+using GeekShopping.Web.Services.IServices;
+using GeekShopping.Web.Services;
 
 namespace GeekShopping.ProductAPI
 {
@@ -16,32 +15,30 @@ namespace GeekShopping.ProductAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = Configuration["MySQLConnection:MySQLConnectionString"]; 
+            services.AddHttpClient<IProductService, ProductService>(c =>
+                c.BaseAddress = new Uri(Configuration["ServiceUrls:ProductAPI"])
+            );
 
-            services.AddDbContext<MySQLContext>(options => options
-                .UseMySql(connection,
-                    new MySqlServerVersion(
-                        new Version(5, 6))));
-
-            IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
-            services.AddSingleton(mapper);
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-            services.AddScoped<IProductRepository, ProductRepository>();
-
-            services.AddControllers();
-            services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
+            services.AddControllersWithViews();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)
         {
-            if (app.Environment.IsDevelopment())
+            //// Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseExceptionHandler("/Home/Error");
             }
-            app.MapControllers();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
         }
     }
 
